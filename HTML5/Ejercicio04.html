@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas e Inputs</title>
+</head>
+<body>
+    <form>
+        <section>
+            <p>Data List</p> 
+            <fieldset>
+                <label for="inputLista">Lista de Colores</label>
+                <input list="listacolores" name="inputLista">
+                <datalist id="listacolores">
+                    <option value="Azul">
+                    <option value="Rojo">
+                    <option value="Amarillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Url</p>
+            <fieldset>
+                <label for="url">Lista de Urls</label>
+                <input type="url" name="url" id="url" placeholder="https://www.example.com"
+                pattern="https://.*" size="30"
+                list="listaurls" required>
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by google">
+                    <option value="https://www.msn.com" label="by ms">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="range">Rangos</label>
+                <input type="range" list="listanums" step="1" name="range" max="6" min="0">
+                <datalist id="listanums">
+                    <option value="0" label="cero">
+                    <option value="1" label="uno">
+                    <option value="2" label="dos">
+                    <option value="3" label="tres">
+                    <option value="4" label="cuatro">
+                    <option value="5" label="cinco">
+                </datalist>
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" name="btn_enviar" value="Enviar">
+        <input type="reset" name="btn_limpiar" value="limpiar">
+    </form>
+</body>
+</html>
+
+
+
+
+<!--<fieldset></fieldset>
+    El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario
+
+    <datalist>
+    es una etiqueta de HTML5 que se utiliza para crear una lista de opciones predefinidas que se pueden utilizar en un campo de entrada
+
+    pattern
+    especifica una expresión regular usada para validar los campos de entrada
+
+    size="30" tamaño del input
+
+    limpiar formulario
+    <input type="reset" name="btn_limpiar" value="limpiar">
+
+-->
+

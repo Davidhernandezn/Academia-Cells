@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <form>
+        <section>
+            <p>Text Input</p>
+            <fieldset>
+                <label for="texto">Ingresar Texto</label>
+               <input type="text" placeholder="Ingresa un texto"> 
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Password Input</p>
+            <fieldset>
+                <label for="password">Ingresa password</label>
+                <input type="password" name="password" id="password" placeholder="Ingresa password">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Telefono Input</p>
+            <fieldset>
+                <label for="telefono">Ingresa Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingresa Telefono">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Datalist</p>
+            <fieldset>
+                <label for="Lista de Colores"></label>
+                <input list="listacolores" name="inputLista">
+                <datalist id="listacolores">
+                    <option value="Azul">
+                    <option value="Rojo">
+                    <option value="Amarillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+                </datalist>           
+             </fieldset>
+        </section>
+
+        <section>
+            <p>Url</p>
+            <fieldset>
+                <label for="url">Lista de Urls</label>
+                <input type="url" name="url" id="url" placeholder="https://www.example.com"
+                pattern="https://.*" size="30"
+                list="listaurls" required>
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by google">
+                    <option value="https://www.msn.com" label="by ms">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="rango">Rangos</label>
+                <input type="range" list="listanums" step="2" name="range" max="6" min="0">
+                <datalist id="listanums">
+                    <option value="0" label="cero">
+                    <option value="1" label="uno">
+                    <option value="2" label="dos">
+                    <option value="3" label="tres">
+                    <option value="4" label="cuatro">
+                    <option value="5" label="cinco">
+                    </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Input File</p>
+            <fieldset>
+                <label for="files">Selecciona un archivo</label>
+                <input type="file" name="files" id="files" multiple="multiple">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Checkbox</p>
+            <fieldset>
+                <label for="checks">Selecciona varios</label> <br>
+                <label for="opcion1">Opción 1</label>
+                <input type="checkbox" id="opcion1" checked>
+                <label for="opcion2">Opción 2</label>
+                <input type="checkbox" id="opcion2">
+                <label for="opcion3">Opción 3</label>
+                <input type="checkbox" id="opcion3" checked>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Radio Buttons</p>
+            <fieldset>
+                <label for="">Selecciona uno</label><br>
+                <label for="radio1">Opcion1</label>
+                <input type="radio" name="opcion" id="radio1">
+                <label for="radio2">Opcion2</label>
+                <input type="radio" name="opcion" id="radio2">
+                <label for="radio3">Opcion3</label>
+                <input type="radio" name="opcion" id="radio3"
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Color</p>
+            <fieldset>
+                <label for="color">Seleccione un color</label>
+                <input type="color" name="color" id="color">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>DateTime</p>
+            <fieldset>
+                <label for="fecha">Selecciona la fecha y hora</label>
+                <input type="datetime-local" name="fechayhora" id="fechayhora">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Time</p>
+            <fieldset>
+                <label for="hora">Selecciona la Hora</label>
+                <input type="time" name="hora" id="hora">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Text Area</p>
+            <fieldset>
+                <label for="text">Ingresa Texto</label>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </fieldset>
+        </section>
+<br>
+        <input type="submit" value="enviar" name="btn_enviar">
+        <input type="reset" value="limpiar" name="btn_limpiar">
+
+    </form>
+</body>
+</html>
