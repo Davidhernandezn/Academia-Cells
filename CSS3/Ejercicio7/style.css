@@ -1,0 +1,35 @@
+body{
+    background-color: #D5DBDB;
+}
+.class-parr-2 ,.class-parr-3{
+    background-color: beige;
+}
+
+li{
+text-decoration: underline;
+}
+
+.div-4{
+    background-color: rgb(71, 71, 209);
+    color: white;
+    padding: 2px;
+}
+
+.artic{
+    background-color: cadetblue;
+    font-family: cursive;
+}
+
+.with-currency{
+    background-color: rgb(190, 243, 105);
+}
+
+.prodct{
+padding: 2px;
+color: teal;
+font-size: 24px;
+}
+
+.price{
+    color: brown;
+}
