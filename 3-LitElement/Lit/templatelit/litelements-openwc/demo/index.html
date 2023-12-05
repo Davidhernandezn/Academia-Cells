@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+
+  <script type="module">
+    import {html, render} from 'lit-html';
+    import '../src/ContactoLitelement.js';
+    import '../src/ContacList.js'
+  </script>
+
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <contacto-component email="some_email@gmail.com" nombre="Juan Perez"></contacto-component>
+    </li>
+    <li>
+      <contacto-component email="some_email2@gmail.com" nombre="Luis Martinez" vermas></contacto-component>
+    </li>
+  </ul>
+<hr>
+
+  <contaclist-component></contaclist-component>
+<!--
+  <div id="demo"></div> 
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../litelements-openwc.js';
+
+    const header = 'Hello owc World!';
+    render(
+      html`
+        <litelements-openwc .header=${header}>
+          some light-dom
+        </litelements-openwc>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+
+      -->
+</body>
+</html>
