@@ -51,6 +51,8 @@ export class TemplateBind extends LitElement {
       Event handler binding
       <button @click="${this.clickHandler}">Click</button>
       </div>
+
+<hr>
     `;
   }
 

@@ -2,18 +2,14 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <style>
-    body {
-      background: #fafafa;
-    }
-  </style>
 </head>
 <body>
   <div id="demo"></div>
+  <section id="colorList"></section>
 
   <script type="module">
-    import { html, render } from 'lit';
-    import '../template-bind.js';
+    import { html, render } from 'lit-html';
+    import '../src/template-bind';
 
     const header = 'Hello owc World!';
     render(
@@ -23,6 +19,13 @@
         </template-bind>
       `,
       document.querySelector('#demo')
+    );
+
+    render(
+      html`
+      <color-list></color-list>
+      `,
+        document.querySelector('#colorList')
     );
   </script>
 </body>
