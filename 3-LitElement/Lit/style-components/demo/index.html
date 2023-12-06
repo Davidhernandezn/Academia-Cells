@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-GB">
+<head>  <meta charset="utf-8"></head>
+<body>
+  <div id="elemento"></div>
+
+<script type="module">
+  import { html, render } from 'lit';
+  import '../src/HerenciaElemento.js';
+
+  const header = 'Herencia de estilos';
+  render(
+    html`<herencia-elemento .header=${header}>
+        some light-dom
+      </herencia-elemento>`,
+    document.querySelector('#elemento')
+  );
+</script>
+</body>
+</html>
