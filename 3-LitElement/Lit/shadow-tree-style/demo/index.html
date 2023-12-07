@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../shadow-tree-style.js';
+
+    const header = 'Estilos al Shadow Tree';
+    render(
+      html`
+      <h1>Estilos al Shadow Tree</h1>
+        <shadow-tree-style></shadow-tree-style>`,
+      document.querySelector('#demo'));
+  </script>
+</body>
+</html>
