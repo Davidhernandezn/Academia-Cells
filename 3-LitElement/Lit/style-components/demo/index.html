@@ -3,10 +3,11 @@
 <head>  <meta charset="utf-8"></head>
 <body>
   <div id="elemento"></div>
-
+  <div id="estilosCompartidos"></div>
 <script type="module">
   import { html, render } from 'lit';
   import '../src/HerenciaElemento.js';
+  import '../src/style-component.js'
 
   const header = 'Herencia de estilos';
   render(
@@ -15,6 +16,13 @@
       </herencia-elemento>`,
     document.querySelector('#elemento')
   );
+
+render(
+  html`
+  <br>
+  <h2>Compartir estilos</h2>
+  <sharing-styles></sharing-styles>`,
+document.querySelector('#estilosCompartidos'));
 </script>
 </body>
 </html>
