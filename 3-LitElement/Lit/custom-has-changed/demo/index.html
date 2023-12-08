@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../custom-has-changed.js';
+
+    render(
+      html`
+      <h1>Custom Has Changed</h1>
+        <custom-has-changed></custom-has-changed>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
