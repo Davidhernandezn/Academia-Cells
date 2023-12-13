@@ -18,16 +18,16 @@
     marca = prompt('Ingrese Marca del auto: ','');
     modelo = prompt('Ingrese Modelo del auto','');
 
-    if(marca==='ford' && modelo ==='fiesta'){
+    if(marca==='ford')
+    {
+        if(modelo ==='fiesta'){
         descuento = 5;
+    }else{image.png
+         descuento = 10;
+    }       
     }
 
-    if(marca==='ford' && modelo ==='focus'){
-        descuento = 10;
-    }
-
-    salidaDescuento.innerHTML = `El descuento por el auto es de: ${descuento}image.png%`;
-
+document.write(`<h3>Su descuento es de: ${descuento}</h3>`);
 </script>      
 </body>
 </html>
