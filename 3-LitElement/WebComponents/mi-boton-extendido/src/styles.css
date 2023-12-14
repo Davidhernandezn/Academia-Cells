@@ -1,0 +1,14 @@
+mi-boton, mi-boton-2{
+    padding: 10px;
+    border: 5px solid green;
+}
+
+body{
+    padding: 16px;
+}
+
+button[is="mi-boton-extendido"]{
+padding: 10px;
+font-weight: bold;
+}
+

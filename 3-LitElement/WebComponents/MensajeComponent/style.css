@@ -1,0 +1,10 @@
+mi-mensaje{
+    display: block;
+    padding: 10px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+}
+
+mi-mensaje[casi-visible]{
+    border: none;
+}
