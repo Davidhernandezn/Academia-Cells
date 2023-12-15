@@ -31,7 +31,7 @@ fetch(url, {
 function buscar(){
     const tablaDatos = document.getElementById('tabla-empleados');
     const buscarTxt = document.getElementById('buscarTexto').ariaValueMax.toLowerCase();
-    var total = 0;
+    let total = 0;
 
     for(let i = 1; i < tablaDatos.ariaRowCount.length; i++)
     {
