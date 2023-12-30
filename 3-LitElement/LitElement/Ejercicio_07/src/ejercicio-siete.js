@@ -44,7 +44,13 @@ static get styles(){
             <h1>Estilos estaticos</h1>
 
             <button class="btn">Click</button>
+            <hr>
+            <button class="btn" @click=${this.primerEvento}>Boton con Evento</button>
         `
+    }
+
+    primerEvento(){
+        console.log('Diste Click')
     }
 }
 // PARA QUE EL NAVEGAGOR PUEDA INTERPRETARLO
