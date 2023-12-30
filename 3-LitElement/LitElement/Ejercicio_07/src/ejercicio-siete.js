@@ -60,7 +60,7 @@ static get styles(){
         console.log('Diste Click')
     }
 
-    //EVENTO CHANGE
+    //EVENT CHANGE
     event(e){
         let valueInput = e.target.value;
         let tamanio = valueInput.length;
