@@ -1,25 +1,37 @@
-import { LitElement, html } from 'lit-element';
-import { buutonStyles } from '../css/button-styles';
-
-
+import { LitElement, html, css } from 'lit-element';
+import { butonStyles } from '../css/button-styles';
+import { generalStyles } from '../css/general-styles';
 export class ButtonComponent extends LitElement{
+    static get styles(){
+    //IMPORTAMOS MODULOS CSS
+    return[
+        butonStyles,
+        generalStyles
+    ]
+}
+
 // DEFINIR PROPIEDADES
     static get properties(){
     return{
+        disabled:{type: Boolean}
     }  
 }
 
 // PARA INICIALIZAR PROPIEDADES
 constructor(){
     super();
+    this.disabled = true;
   }
 
 // render para llamar al template
     render(){
         return html `
-        <h1>BTN componente</h1>
-        <button>Click</button>
+        <button-primary class="button-primary" @click="${this.clickButtton}" ?disabled=${this.disabled}>Click</button-primary>
         `
+    }
+
+    clickButtton(){
+        console.log('Diste click');
     }
 }
 
